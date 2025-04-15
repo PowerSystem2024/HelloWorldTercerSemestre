@@ -1,0 +1,40 @@
+Programamos con diferentes tipos de archivos, ahora .txt
+Los acentos son importantes para las palabras
+Acción, ejecución y producción
+Letras:
+w -> escribe
+r -> lee
+a -> agrega
+x -> crea
+t -> texto
+b -> binarios
+w+ -> escribe y lee
+r+ -> lee y escribe
+saludos
+Con esto terminamosProgramamos con diferentes tipos de archivos, ahora .txt
+Los acentos son importantes para las palabras
+Acción, ejecución y producción
+Letras:
+w -> escribe
+r -> lee
+a -> agrega
+x -> crea
+t -> texto
+b -> binarios
+w+ -> escribe y lee
+r+ -> lee y escribe
+saludos
+Con esto terminamosProgramamos con diferentes tipos de archivos, ahora .txt
+Los acentos son importantes para las palabras
+Acción, ejecución y producción
+Letras:
+w -> escribe
+r -> lee
+a -> agrega
+x -> crea
+t -> texto
+b -> binarios
+w+ -> escribe y lee
+r+ -> lee y escribe
+saludos
+Con esto terminamos
