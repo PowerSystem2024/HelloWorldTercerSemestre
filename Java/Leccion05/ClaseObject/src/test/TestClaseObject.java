@@ -3,23 +3,29 @@ package test;
 
 import domain.*;
 
-public class TestConversionObjetos {
+public class TestClaseObject {
     public static void main(String[] args) {
-        Empleado empleado;
-        empleado = new Escritor("Juan", 5000, TipoEscritura.CLASICO);
-        //System.out.println("empleado = " + empleado);
-        System.out.println(empleado.obtenerDetalles()); // Si queremos acceder a métodos Escritor
-        
-        //empleado.getTipoEscritura(); // No se puede hacer
 
-        // Downcasting
-        //((Escritor)empleado).getTipoEscritura(); // Tenemos 2 opciones: esta es una
-        Escritor escritor = (Escritor)empleado; // Esta es la segunda opción
-        escritor.getTipoEscritura();
+        Empleado empleado1 = new Empleado("Juan", 5000);
+        Empleado empleado2 = new Empleado("Juan", 5000);
         
-        // Upcasting
-        Empleado empleado2 = escritor;
-        System.out.println(empleado2.obtenerDetalles());
+        if(empleado1 == empleado2){
+            System.out.println("Tienen la misma referencia en memoria");
+        }
+        else{
+            System.out.println("Tienen distinta referencia en memoria");
+        }
+        
+        if (empleado1.equals(empleado2)){
+            System.out.println("Los objetos son iguales en contenido");
+        }
+        else{
+            System.out.println("Los objetos son distintos en contenido");
+        }
+        
+        if(empleado1.hashCode() == empleado2.hashCode()){
+            
+        }
         
     }
 }
