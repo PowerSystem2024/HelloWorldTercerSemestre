@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>N-Reinas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Problema de las n-Reinas ♛</h1>
+  <h2 id="titulo-tablero"></h2>
+  <div id="navegacion">
+    <button id="anterior">Anterior</button>
+    <span id="contador">Solución 1 de 1</span>
+    <button id="siguiente">Siguiente</button>
+  </div>
+  <div id="board" class="board"></div>
+  <h3>Índices de Reinas (fila:columna)</h3>
+  <pre id="indices"></pre>
+  <form id="form-n">
+    <label for="n-input">Cambiar n:</label>
+    <input type="number" id="n-input" min="1" required>
+    <button type="submit">Actualizar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
