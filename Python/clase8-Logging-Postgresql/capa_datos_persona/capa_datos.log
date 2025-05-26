@@ -1,0 +1,91 @@
+11:47:44 AM:DEBUG [logger_base.py:16] Mensaje a nivel de debug
+11:47:44 AM:INFO [logger_base.py:17] Mensaje a nivel de info
+11:47:44 AM:WARNING [logger_base.py:18] Mensaje a nivel de warning
+11:47:44 AM:ERROR [logger_base.py:19] Mensaje a nivel de error
+11:47:44 AM:CRITICAL [logger_base.py:20] Mensaje a nivel critico
+06:37:30 PM:DEBUG [persona.py:53] 
+        ID Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+06:38:53 PM:DEBUG [persona.py:53] 
+        ID Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+06:39:04 PM:DEBUG [persona.py:53] 
+        ID Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+06:40:11 PM:DEBUG [persona.py:53] 
+        ID Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+06:40:11 PM:DEBUG [persona.py:56] 
+        ID Persona: Jose
+        Nombre: Lepez
+        Apellido: jlepez@mail.com
+        Email: None
+        
+06:40:46 PM:DEBUG [persona.py:53] 
+        ID Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+06:40:46 PM:DEBUG [persona.py:56] 
+        ID Persona: None
+        Nombre: Jose
+        Apellido: Lepez
+        Email: jlepez@mail.com
+        
+06:41:33 PM:DEBUG [persona.py:53] 
+        ID Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+06:41:33 PM:DEBUG [persona.py:56] 
+        ID Persona: None
+        Nombre: Jose
+        Apellido: Lepez
+        Email: jlepez@mail.com
+        
+06:41:33 PM:DEBUG [persona.py:59] 
+        ID Persona: 1
+        Nombre: None
+        Apellido: None
+        Email: None
+        
+06:41:44 PM:DEBUG [persona.py:53] 
+        ID Persona: 1
+        Nombre: Juan
+        Apellido: Perez
+        Email: jperez@mail.com
+        
+06:41:44 PM:DEBUG [persona.py:56] 
+        ID Persona: None
+        Nombre: Jose
+        Apellido: Lepez
+        Email: jlepez@mail.com
+        
+06:41:44 PM:DEBUG [persona.py:59] 
+        ID Persona: 1
+        Nombre: None
+        Apellido: None
+        Email: None
+        
+06:59:35 PM:DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x71607bf1bc40; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+07:00:39 PM:ERROR [conexion.py:27] Ocurrió un error del tipo: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgre"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgre"
+
+07:02:40 PM:DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x76c25a31bd80; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+07:02:40 PM:ERROR [conexion.py:40] Ocurrió un error: 'NoneType' object has no attribute 'cursor'
+07:03:13 PM:DEBUG [conexion.py:24] Conexión exitosa: <connection object at 0x7b92cc91bd80; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+07:03:13 PM:DEBUG [conexion.py:37] Se abrió correctamente el cursor: <cursor object at 0x7b92cb9cd210; closed: 0>
