@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/avatar.js"></script>
     <title>la Leyenda de Aang: Avatar</title>
 </head>
 <body>
@@ -21,8 +22,8 @@
     </section>
     <section id="seleccionar-ataque">
         <h2>Elige tu ataque</h2>
-        <p>Tu personaje tiene <span>3</span> vias</p>
-        <p>Los personajes del enemigo tienen <span>3</span> vidas</p>
+        <p>Tu personaje <span id="personaje-jugador"></span> tiene <span>3</span> vidas</p>
+        <p>El personaje <span id="personaje-enemigo"></span> del enemigo tiene <span>3</span> vidas</p>
         <p>
             <button id="boton-fuego">Fuego</button>
             <button id="boton-agua">Agua</button>
@@ -36,6 +37,5 @@
     <section id="boton-reiniciar">
         <button>Reiniciar</button>
     </section>
-    <script src="./js/avatar.js"></script>
 </body>
 </html> 
