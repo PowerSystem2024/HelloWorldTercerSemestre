@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.tower {
+  width: 120px;
+  height: 250px;
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background: #f3f3f3;
+  position: relative;
+}
+
+.disk {
+  height: 20px;
+  border-radius: 5px;
+  margin: 2px 0;
+  background: steelblue;
+  transition: all 0.5s ease;
+}
+
+.disk[data-size="1"] { width: 30px; }
+.disk[data-size="2"] { width: 45px; }
+.disk[data-size="3"] { width: 60px; }
+.disk[data-size="4"] { width: 75px; }
+.disk[data-size="5"] { width: 90px; }
+.disk[data-size="6"] { width: 105px; }
+
