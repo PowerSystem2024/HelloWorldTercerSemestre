@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #2b5876);
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #ffcb6b;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#moveCounter {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+button {
+  background-color: #ffcb6b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #ffd96a;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.tower {
+  width: 160px;
+  height: 250px;
+  border: 2px dashed #ffffff33;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tower:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  border-color: #ffcb6b;
+}
+
+/* Discos */
+.disk {
+  height: 20px;
+  border-radius: 8px;
+  margin: 3px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  cursor: grab;
+}
+
+.disk:active {
+  cursor: grabbing;
+}
+
+.disk[data-size="1"] { width: 40px; background: linear-gradient(to right, #4fc3f7, #29b6f6); }
+.disk[data-size="2"] { width: 60px; background: linear-gradient(to right, #4dd0e1, #00acc1); }
+.disk[data-size="3"] { width: 80px; background: linear-gradient(to right, #81c784, #66bb6a); }
+.disk[data-size="4"] { width: 100px; background: linear-gradient(to right, #ffd54f, #ffca28); }
+.disk[data-size="5"] { width: 120px; background: linear-gradient(to right, #ff8a65, #ff7043); }
+.disk[data-size="6"] { width: 140px; background: linear-gradient(to right, #ba68c8, #ab47bc); }
+
