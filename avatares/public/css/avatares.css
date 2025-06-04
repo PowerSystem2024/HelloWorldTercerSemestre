@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #e2e8f0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #81d4fa;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+section {
+    background: rgba(45, 55, 72, 0.9);
+    border: 1px solid rgba(129, 212, 250, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+h2 {
+    color: #81d4fa;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#seleccionar-personaje {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.personaje-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    background: rgba(74, 85, 104, 0.4);
+}
+
+.personaje-option:hover {
+    background: rgba(74, 85, 104, 0.7);
+    border-color: #4fd1c7;
+}
+
+.personaje-option input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #4fd1c7;
+}
+
+.personaje-option label {
+    cursor: pointer;
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+button {
+    background: linear-gradient(45deg, #2c5282, #3182ce);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #3182ce, #4299e1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+#seleccionar-ataque p {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #cbd5e0;
+}
+
+#seleccionar-ataque .vidas {
+    font-weight: bold;
+    color: #4fd1c7;
+}
+
+.botones-ataque {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.botones-ataque button {
+    margin: 5px;
+    min-width: 120px;
+}
+
+#boton-fuego {
+    background: linear-gradient(45deg, #c53030, #e53e3e);
+}
+
+#boton-fuego:hover {
+    background: linear-gradient(45deg, #e53e3e, #fc8181);
+}
+
+#boton-agua {
+    background: linear-gradient(45deg, #2b6cb0, #3182ce);
+}
+
+#boton-agua:hover {
+    background: linear-gradient(45deg, #3182ce, #63b3ed);
+}
+
+#boton-tierra {
+    background: linear-gradient(45deg, #553c9a, #805ad5);
+}
+
+#boton-tierra:hover {
+    background: linear-gradient(45deg, #805ad5, #b794f6);
+}
+
+#boton-aire {
+    background: linear-gradient(45deg, #0891b2, #06b6d4);
+}
+
+#boton-aire:hover {
+    background: linear-gradient(45deg, #06b6d4, #67e8f9);
+}
+
+#mensajes {
+    background: rgba(26, 32, 44, 0.8);
+    border-left: 4px solid #4fd1c7;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e2e8f0;
+}
+
+#boton-reiniciar button {
+    background: linear-gradient(45deg, #38a169, #48bb78);
+    font-size: 1.1rem;
+    padding: 15px 30px;
+}
+
+#boton-reiniciar button:hover {
+    background: linear-gradient(45deg, #48bb78, #68d391);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        margin: 15px auto;
+        padding: 15px;
+    }
+    
+    .botones-ataque {
+        flex-direction: column;
+        align-items: center;
+    }
+}
