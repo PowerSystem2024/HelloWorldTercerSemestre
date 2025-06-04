@@ -119,37 +119,37 @@ button:hover {
     min-width: 120px;
 }
 
-#boton-fuego {
+#boton-punio {
     background: linear-gradient(45deg, #c53030, #e53e3e);
 }
 
-#boton-fuego:hover {
+#boton-punio:hover {
     background: linear-gradient(45deg, #e53e3e, #fc8181);
 }
 
-#boton-agua {
+#boton-patada {
     background: linear-gradient(45deg, #2b6cb0, #3182ce);
 }
 
-#boton-agua:hover {
+#boton-patada:hover {
     background: linear-gradient(45deg, #3182ce, #63b3ed);
 }
 
-#boton-tierra {
+#boton-barrida {
     background: linear-gradient(45deg, #553c9a, #805ad5);
 }
 
-#boton-tierra:hover {
+#boton-barrida:hover {
     background: linear-gradient(45deg, #805ad5, #b794f6);
 }
 
-#boton-aire {
+/* #boton-aire {
     background: linear-gradient(45deg, #0891b2, #06b6d4);
 }
 
 #boton-aire:hover {
     background: linear-gradient(45deg, #06b6d4, #67e8f9);
-}
+} */
 
 #mensajes {
     background: rgba(26, 32, 44, 0.8);
@@ -169,7 +169,6 @@ button:hover {
     background: linear-gradient(45deg, #48bb78, #68d391);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     body {
         padding: 10px;
