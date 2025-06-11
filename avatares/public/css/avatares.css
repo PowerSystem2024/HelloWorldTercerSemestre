@@ -188,3 +188,48 @@ button:hover {
         align-items: center;
     }
 }
+
+#reglas-juego {
+    background: rgba(26, 32, 44, 0.95);
+    border: 2px solid #4fd1c7;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#reglas-juego h2 {
+    text-align: center;
+    color: #81d4fa;
+    margin-bottom: 10px;
+}
+
+#reglas-juego ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#boton-ver-reglas,
+#boton-cerrar-reglas {
+    background: linear-gradient(45deg, #4fd1c7, #81e6d9);
+    color: #1a202c;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+#boton-ver-reglas:hover,
+#boton-cerrar-reglas:hover {
+    background: linear-gradient(45deg, #38b2ac, #5eead4);
+}
+
+.oculto {
+    display: none;
+}

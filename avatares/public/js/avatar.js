@@ -330,6 +330,23 @@ function deshabilitarBotones() {
     botonBarrida.style.opacity = '0.5'
 }
 
+window.addEventListener('DOMContentLoaded', () => {
+    const botonVerReglas = document.getElementById('boton-ver-reglas');
+    const botonCerrarReglas = document.getElementById('boton-cerrar-reglas');
+    const seccionReglas = document.getElementById('reglas-juego');
+
+    if (botonVerReglas && botonCerrarReglas && seccionReglas) {
+        botonVerReglas.addEventListener('click', () => {
+            seccionReglas.classList.remove('oculto');
+        });
+
+        botonCerrarReglas.addEventListener('click', () => {
+            seccionReglas.classList.add('oculto');
+        });
+    }
+});
+
+
 /**
  * Reinicia completamente el juego recargando la página
  * Esta es la forma más sencilla de resetear todas las variables y el estado del juego
