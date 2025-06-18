@@ -21,6 +21,19 @@ function iniciarJuego() {
     document.getElementById('boton-barrida').addEventListener('click', ataqueBarrida)
 
     document.getElementById('boton-reiniciar').querySelector('button').addEventListener('click', reiniciarJuego)
+    
+    // AGREGAMOS LOS EVENT LISTENERS PARA LAS REGLAS
+    document.getElementById('boton-ver-reglas').addEventListener('click', mostrarReglas)
+    document.getElementById('boton-cerrar-reglas').addEventListener('click', ocultarReglas)
+}
+
+// FUNCIONES PARA MOSTRAR Y OCULTAR LAS REGLAS
+function mostrarReglas() {
+    document.getElementById('reglas-juego').classList.remove('oculto')
+}
+
+function ocultarReglas() {
+    document.getElementById('reglas-juego').classList.add('oculto')
 }
 
 function seleccionarPersonajeJugador() {
@@ -31,6 +44,7 @@ function seleccionarPersonajeJugador() {
     else if (document.getElementById("toph").checked) spanPersonajeJugador.innerHTML = "Toph"
     else {
         alert('Por favor selecciona un personaje')
+        reiniciarJuego()
         return
     }
     seleccionarPersonajeEnemigo()
@@ -54,12 +68,25 @@ function ataqueAleatorioEnemigo() {
 }
 
 function combate() {
+
+    let spanVidasJugador = document.getElementById('vidas-jugador')
+    let spanVidasEnemigo = document.getElementById('vidas-enemigo')
+
+
+
     if (ataqueEnemigo == ataqueJugador) crearMensaje('Empate')
-    else if ((ataqueJugador == 'Puño' && ataqueEnemigo == 'Barrida') ||
-             (ataqueJugador == 'Patada' && ataqueEnemigo == 'Puño') ||
-             (ataqueJugador == 'Barrida' && ataqueEnemigo == 'Patada'))
-        crearMensaje('Ganaste')
-    else crearMensaje('Perdiste')
+    else if ((ataqueJugador == 'Puño' && ataqueEnemigo == 'Barrida') || 
+            (ataqueJugador == 'Patada' && ataqueEnemigo == 'Puño') ||
+            (ataqueJugador == 'Barrida' && ataqueEnemigo == 'Patada')) {
+                crearMensaje('Ganaste')
+                vidasEnemigo--
+                spanVidasEnemigo.innerHTML = vidasEnemigo
+        }
+    else {
+        crearMensaje('Perdiste')
+        vidasJugador --
+        spanVidasJugador.innerHTML = vidasJugador
+    }
 }
 
 function crearMensaje(resultado) {
