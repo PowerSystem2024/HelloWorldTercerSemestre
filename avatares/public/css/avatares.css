@@ -231,5 +231,15 @@ button:hover {
 }
 
 .oculto {
-    display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
+
+section:not(.oculto) {
+  max-height: 1000px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
